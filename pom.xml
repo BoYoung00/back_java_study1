@@ -18,6 +18,7 @@
     </properties>
 
     <dependencies>
+<!--        써블릿-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
