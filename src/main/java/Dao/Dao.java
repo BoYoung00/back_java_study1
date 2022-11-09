@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
 public class Dao {
-    private static String url="jdbc:mysql://localhost:3306/bydbst";
+    private static String url="jdbc:mysql://localhost:3306/user";
     private static String user="root";
     private static String password="rlaqhdud2@";
 
@@ -20,11 +20,10 @@ public class Dao {
             e.printStackTrace();
         }
 
-        String sql = "insert into member values (?,?,?,?,?,?,?)";
+        String sql = "insert into table_by values (?,?,?,?,?,?,?)";
 
         try(Connection conn = DriverManager.getConnection(url, user, password);
             PreparedStatement ps = conn.prepareStatement(sql)) {
-
             ps.setInt(1, dto.getNum());
             ps.setString(2, dto.getName());
             ps.setString(3, dto.getId());

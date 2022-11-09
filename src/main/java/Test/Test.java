@@ -5,7 +5,7 @@ import Dto.Dto;
 
 public class Test {
     public static void main(String[] args) {
-        int num = 2;
+        String num = null;
         String name = "김보영2";
         String id = "qhdud20";
         String pw = "kkbbyy11";
@@ -16,7 +16,7 @@ public class Test {
         Test.addUserData(num, name, id, pw, gender, mail, phone);
     }
 
-    public static void addUserData(int num, String name, String id, String pw, String gender, String mail, String phone) {
+    public static void addUserData(String num, String name, String id, String pw, String gender, String mail, String phone) {
         Dto dto = new Dto(num, name, id, pw, gender, mail, phone);
         Dao dao = new Dao();
 

@@ -9,8 +9,8 @@ public class Dto {
     private String mail;
     private String phoneNumber;
 
-    public Dto(int num, String name, String id, String password, String gender, String mail, String phonenumber) {
-        this.num = num;
+    public Dto(String num, String name, String id, String password, String gender, String mail, String phonenumber) {
+        this.num = this.num;
         this.name = name;
         this.id = id;
         this.password = password;
