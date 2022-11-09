@@ -2,14 +2,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+  <title>JSP - Hello World</title>
 </head>
 <body>
 <%
-    int total = 0;
-    for (int i = 1; i<=10; i++) {
-        total = total + i;
-    }
+  int total = 0;
+  for (int i = 1; i<=10; i++) {
+    total = total + i;
+  }
 %>
 
 1부터 10까지의 합 : <%=total %>
