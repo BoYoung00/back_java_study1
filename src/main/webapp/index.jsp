@@ -5,6 +5,7 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
+<%--   <%%> 이 안에 자바 코드 넣어주면 그대로 실행이 됨--%>
 <%
     int total = 0;
     for (int i = 1; i<=10; i++) {
