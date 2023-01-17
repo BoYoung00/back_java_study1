@@ -14,5 +14,17 @@
 %>
 
 1부터 10까지의 합 : <%=total %>
+
+<hr>
+<form action="">
+    <input type="text" name="name">
+    <input type="submit" value="확인">
+</form>
+
+<%
+    String a = request.getParameter("name");
+%>
+
+입력 받은 값 : <%=a%>
 </body>
 </html>
